@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__name {
+    font-family: 'Lobster', cursive;
+    font-size: 9.6rem;
+    font-weight: 500;
+    text-shadow: 7px 5px 4px rgba(204,204,204, 1);
+    color: var(--color-grey-dark-1);
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+  }
+
+  &__profession {
+    display: inline-block;
+    justify-content: center;
+    width: 70rem;
+    font-size: 1.6rem;
+  }
+  
+}
+
+///////////////////////////////////////
+// "Développeur Web" inside a line */
+.hr-text {
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hr-text:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
