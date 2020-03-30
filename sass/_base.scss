@@ -9,13 +9,13 @@
   --color-grey-light-4: #ccc;
 
   --color-grey-dark-1 : #333;
-  --color-grey-dark-2 : #777;
+  --color-grey-dark-2 : #4F4F4F;
   --color-grey-dark-3 : #999;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
 
-  --font-primary: font-family: 'Montserrat', sans-serif;
-  --font-display: font-family: 'Lobster', cursive;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-display: 'Lobster', cursive;
 }
 
 * {
@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);

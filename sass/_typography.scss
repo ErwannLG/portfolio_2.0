@@ -1,0 +1,25 @@
+.heading-1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 9.6rem;
+  text-shadow: 7px 5px 4px rgb(168, 168, 168);
+}
+
+.heading-2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  align-items: center;
+
+//  &::before,
+//  &::after {
+  //  content: "";
+    //height: 1px;
+   // display: inline-block;
+    //background-color: red;
+ // }
+
+}
