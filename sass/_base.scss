@@ -1,21 +1,3 @@
-/*
-COLORS
-
-  --color-primary: #1a9bd6;
-  --color-primary-light: #56CCF2;
-  --color-primary-dark: #006B9C;
-
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-
-  --color-grey-dark-1 : #333;
-  --color-grey-dark-2 : #777;
-  --color-grey-dark-3 : #999;
-
-*/
-
 :root {
   --color-primary: #1a9bd6;
   --color-primary-light: #56CCF2;
@@ -31,6 +13,9 @@ COLORS
   --color-grey-dark-3 : #999;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+
+  --font-primary: font-family: 'Montserrat', sans-serif;
+  --font-display: font-family: 'Lobster', cursive;
 }
 
 * {
@@ -54,7 +39,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
-  background-image: linear-gradient(to right bottom, #fff, var(--color-grey-light-1));
+  background-image: linear-gradient(to bottom, #FBFBFF, #E3E3F2);
   background-repeat: no-repeat;
 
   min-height: 100vh;
