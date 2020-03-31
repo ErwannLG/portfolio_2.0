@@ -32,9 +32,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
-  background-image: linear-gradient(to bottom, #FBFBFF, #E3E3F2);
-  background-repeat: no-repeat;
-  min-height: 100vh; }
+  background-image: linear-gradient(to bottom, #FBFBFF, #E3E3F2); }
 
 .hr-text {
   position: relative;
@@ -108,19 +106,23 @@ body {
   margin-top: 6rem; }
 
 .skills {
-  width: 60%;
-  margin: 8rem auto;
-  padding: 5rem 4rem;
+  width: 75%;
+  margin: 9rem auto;
+  padding: 6rem 8rem;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: var(--shadow-drop);
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
   .skills__box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    .skills__box-description {
+      font-size: 1.6rem;
+      margin-top: 1.6rem;
+      text-align: center; }
   .skills__box:not(:last-child) {
     margin-right: 4rem; }
   .skills__image {
