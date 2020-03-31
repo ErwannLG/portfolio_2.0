@@ -7,13 +7,13 @@
 
 .heading-2 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
 
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
   align-items: center;
-
+  margin-top: 1rem;
 //  &::before,
 //  &::after {
   //  content: "";
@@ -22,4 +22,10 @@
     //background-color: red;
  // }
 
+}
+
+.heading-3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
 }

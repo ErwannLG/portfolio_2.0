@@ -35,6 +35,100 @@
   background-color: #fcfcfa;
 }
 
-.social {
+
+//////////////////////////
+// NAVIGATION
+.navigation {
+  background-color: #fff;
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: .8rem 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__menu {
+    display: flex;
+
+    list-style: none;
+    text-transform: uppercase;
+
+    &-item {
+      transition: all .2s;
+      height: 100%;
+
+      &:hover {
+        background-color: var(--color-primary-light);
+      }
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    
+    &-icon {
+      height: 2.6rem;
+      width: 2.6rem;
+      fill: var(--color-grey-dark-2);
+      transition: all .2s;
+
+      &:hover {
+        fill: var(--color-primary);
+      }
+    }
+    
+    &-icon:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+
+
+//////////////////////////
+// HEADER
+.header {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+
+
+//////////////////////////
+// SKILLS
+.skills {
+  width: 60%;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 8rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: var(--shadow-drop);
   
+  display: flex;
+  justify-content: space-between;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  &__image {
+
+  }
 }
