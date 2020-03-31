@@ -111,24 +111,28 @@
 // SKILLS
 .skills {
   width: 60%;
-  margin-top: 8rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3rem 8rem;
+  margin: 8rem auto;
+  padding: 5rem 4rem;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: var(--shadow-drop);
   
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   &__box {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box:not(:last-child) {
+    margin-right: 4rem;
   }
 
   &__image {
-
+    height: 12rem;
+    width: 12rem;
   }
 }
