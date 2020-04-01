@@ -129,6 +129,22 @@ body {
     height: 12rem;
     width: 12rem; }
 
+.portfolio {
+  text-align: center; }
+  .portfolio__row {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 6rem 6rem;
+    height: 50rem; }
+  .portfolio__row-dark {
+    background-color: #C6D8E9;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%); }
+  .portfolio__image {
+    display: inline-block;
+    width: 64rem;
+    height: 36rem; }
+
 .heading-1 {
   font-family: var(--font-display);
   font-weight: 400;
@@ -139,9 +155,7 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 400;
-  grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
-  align-items: center;
   margin-top: 1rem; }
 
 .heading-3 {

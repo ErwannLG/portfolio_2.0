@@ -142,3 +142,36 @@
     width: 12rem;
   }
 }
+
+
+.portfolio {
+  text-align: center;
+
+  &__row {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    padding: 6rem 6rem;
+    height: 50rem;
+  }
+
+  &__row-dark {
+    background-color: #C6D8E9;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%);
+
+
+
+  }
+
+  &__row-light {
+    //background-color: orangered;
+
+  }
+
+  &__image {
+    display: inline-block;
+    width: 64rem;
+    height: 36rem;
+  }
+}
