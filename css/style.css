@@ -136,14 +136,26 @@ body {
     justify-items: center;
     align-items: center;
     padding: 6rem 6rem;
-    height: 50rem; }
+    height: 60rem; }
   .portfolio__row-dark {
     background-color: #C6D8E9;
-    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 96%); }
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+    margin-bottom: -2rem; }
+  .portfolio__image-box {
+    flex: 0 0 50%; }
+    .portfolio__image-box--dark {
+      order: 2; }
   .portfolio__image {
     display: inline-block;
     width: 64rem;
     height: 36rem; }
+  .portfolio__description {
+    flex: 0 0 50%; }
+    .portfolio__description-text {
+      font-size: 1.6rem;
+      text-align: left; }
+      .portfolio__description-text--dark {
+        text-align: right; }
 
 .heading-1 {
   font-family: var(--font-display);
@@ -159,6 +171,11 @@ body {
   margin-top: 1rem; }
 
 .heading-3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600; }
+
+.heading-4 {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600; }
