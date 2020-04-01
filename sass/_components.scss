@@ -147,6 +147,10 @@
 .portfolio {
   text-align: center;
 
+  &__title {
+    margin-bottom: 5rem;
+  }
+
   &__row {
     display: flex;
     justify-items: center;
@@ -159,7 +163,14 @@
   &__row-dark {
     background-color: #C6D8E9;
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
-    margin-bottom: -2rem;
+
+    &:not(:first-child) {
+      margin-top: -4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: -4rem;
+    }
 
 
   }

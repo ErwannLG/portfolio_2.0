@@ -131,6 +131,8 @@ body {
 
 .portfolio {
   text-align: center; }
+  .portfolio__title {
+    margin-bottom: 5rem; }
   .portfolio__row {
     display: flex;
     justify-items: center;
@@ -139,8 +141,11 @@ body {
     height: 60rem; }
   .portfolio__row-dark {
     background-color: #C6D8E9;
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
-    margin-bottom: -2rem; }
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%); }
+    .portfolio__row-dark:not(:first-child) {
+      margin-top: -4rem; }
+    .portfolio__row-dark:not(:last-child) {
+      margin-bottom: -4rem; }
   .portfolio__image-box {
     flex: 0 0 50%; }
     .portfolio__image-box--dark {
@@ -172,7 +177,7 @@ body {
 
 .heading-3 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 600; }
 
 .heading-4 {
