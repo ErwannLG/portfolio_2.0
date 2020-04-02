@@ -12,8 +12,10 @@
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
   --shadow-drop: 7px 5px 16px rgb(201, 201, 201);
+  --shadow-small: 0 2px 6px rgba(0, 0, 0, 0.16);
   --font-primary: 'Montserrat', sans-serif;
-  --font-display: 'Lobster', cursive; }
+  --font-display: 'Lobster', cursive;
+  --line: 1px solid var(--color-grey-light-1); }
 
 * {
   margin: 0;
@@ -33,7 +35,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
-  background-image: linear-gradient(to bottom, #FBFBFF, #E3E3F2);
+  background-image: linear-gradient(to bottom, #fff, #E3E3F2);
   background-attachment: fixed; }
 
 ::selection {
@@ -76,6 +78,7 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   padding: .8rem 8rem;
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -109,7 +112,7 @@ body {
 
 .header {
   text-align: center;
-  margin-top: 6rem; }
+  margin-top: 5rem; }
   .header__dev {
     display: flex;
     justify-content: center;
@@ -117,7 +120,7 @@ body {
     .header__dev-line {
       height: 1px;
       width: 26rem;
-      margin-top: .6rem; }
+      margin-top: 1rem; }
       .header__dev-line--start {
         background-image: linear-gradient(to left, var(--color-grey-light-4), transparent);
         margin-right: 2rem; }
@@ -126,15 +129,15 @@ body {
         background-image: linear-gradient(to right, var(--color-grey-light-4), transparent); }
 
 .skills {
-  width: 75%;
+  width: 80%;
   margin: 9rem auto;
-  padding: 6rem 8rem;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: var(--shadow-drop);
   display: flex;
   justify-content: space-between; }
   .skills__box {
+    padding: 3rem 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--shadow-small);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,7 +145,8 @@ body {
     .skills__box-description {
       font-size: 1.6rem;
       margin-top: 1.6rem;
-      text-align: center; }
+      text-align: center;
+      line-height: 2.2rem; }
   .skills__box:not(:last-child) {
     margin-right: 4rem; }
   .skills__image {
