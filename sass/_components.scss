@@ -103,6 +103,29 @@
 .header {
   text-align: center;
   margin-top: 6rem;
+
+  &__dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-line {
+      //background-color: var(--color-grey-dark-3);
+      height: 1px;
+      width: 26rem;
+      margin-top: .6rem;
+      
+      &--start {
+        background-image: linear-gradient(to left, var(--color-grey-light-4), transparent);
+        margin-right: 2rem;
+      }
+      
+      &--end {
+        margin-left: 2rem;
+        background-image: linear-gradient(to right, var(--color-grey-light-4), transparent);
+      }
+    }
+  }
 }
 
 
@@ -144,11 +167,26 @@
 }
 
 
+
+//////////////////////////
+// SKILLS
 .portfolio {
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  
   &__title {
     margin-bottom: 5rem;
+    
+    &-underline {
+      
+      background-color: var(--color-primary);
+      height: 5px;
+      width: 10rem;
+      margin-top: .75rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__row {

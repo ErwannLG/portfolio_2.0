@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #1a9bd6;
+  --color-primary: #2AA9E2;
   --color-primary-light: #56CCF2;
   --color-primary-dark: #006B9C;
   --color-primary-grey: #9DC1F8;
@@ -35,6 +35,10 @@ body {
   color: var(--color-grey-dark-2);
   background-image: linear-gradient(to bottom, #FBFBFF, #E3E3F2);
   background-attachment: fixed; }
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-1); }
 
 .hr-text {
   position: relative;
@@ -106,6 +110,20 @@ body {
 .header {
   text-align: center;
   margin-top: 6rem; }
+  .header__dev {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header__dev-line {
+      height: 1px;
+      width: 26rem;
+      margin-top: .6rem; }
+      .header__dev-line--start {
+        background-image: linear-gradient(to left, var(--color-grey-light-4), transparent);
+        margin-right: 2rem; }
+      .header__dev-line--end {
+        margin-left: 2rem;
+        background-image: linear-gradient(to right, var(--color-grey-light-4), transparent); }
 
 .skills {
   width: 75%;
@@ -132,9 +150,18 @@ body {
     width: 12rem; }
 
 .portfolio {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
   .portfolio__title {
     margin-bottom: 5rem; }
+    .portfolio__title-underline {
+      background-color: var(--color-primary);
+      height: 5px;
+      width: 10rem;
+      margin-top: .75rem;
+      margin-left: auto;
+      margin-right: auto; }
   .portfolio__row {
     display: flex;
     justify-items: center;
