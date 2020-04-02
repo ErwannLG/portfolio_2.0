@@ -3,6 +3,9 @@
   --color-primary-light: #56CCF2;
   --color-primary-dark: #006B9C;
   --color-primary-grey: #9DC1F8;
+  --color-grey-blue-1: #DFE8F1;
+  --color-grey-blue-2: #DAE8F5;
+  --color-grey-blue-3: #C6D8E9;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -41,6 +44,17 @@ body {
 ::selection {
   background-color: var(--color-primary);
   color: var(--color-grey-light-1); }
+
+.footer {
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  background-color: var(--color-grey-dark-1);
+  color: var(--color-grey-light-1);
+  height: 16rem;
+  padding-top: 8rem;
+  text-align: center;
+  font-size: 1.4rem; }
+  .footer span {
+    color: var(--color-grey-blue-1); }
 
 .hr-text {
   position: relative;
@@ -174,7 +188,7 @@ body {
     height: 60rem;
     /*&--dark {*/ }
     .portfolio__row:nth-child(even) {
-      background-color: #C6D8E9;
+      background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%); }
       .portfolio__row:nth-child(even):not(:first-child) {
         margin-top: -4rem; }

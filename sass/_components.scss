@@ -205,7 +205,7 @@
 
     /*&--dark {*/
     &:nth-child(even) {
-      background-color: #C6D8E9;
+      background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
   
       &:not(:first-child) {
