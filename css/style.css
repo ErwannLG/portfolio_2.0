@@ -185,8 +185,7 @@ body {
     justify-items: center;
     align-items: center;
     padding: 6rem 16rem;
-    height: 60rem;
-    /*&--dark {*/ }
+    height: 60rem; }
     .portfolio__row:nth-child(even) {
       background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%); }
@@ -194,10 +193,10 @@ body {
         margin-top: -4rem; }
       .portfolio__row:nth-child(even):not(:last-child) {
         margin-bottom: -4rem; }
+      .portfolio__row:nth-child(even) > .portfolio__image-box {
+        order: 2; }
   .portfolio__image-box {
     flex: 0 0 50%; }
-    .portfolio__image-box--dark {
-      order: 2; }
   .portfolio__image {
     display: inline-block;
     width: 100%;

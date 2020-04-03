@@ -203,7 +203,6 @@
     padding: 6rem 16rem;
     height: 60rem;
 
-    /*&--dark {*/
     &:nth-child(even) {
       background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
@@ -215,20 +214,16 @@
       &:not(:last-child) {
         margin-bottom: -4rem;
       }
-    }
 
-    &--light {
-      
+      & > .portfolio__image-box { // change flex order to have blue rows images on the right side
+        order: 2;
+      }
     }
   }
 
 
   &__image-box {
     flex: 0 0 50%;
-
-    &--dark {
-      order: 2;
-    }
   }
 
 
@@ -252,10 +247,6 @@
       font-size: 1.6rem;
       line-height: 2rem;
       margin-top: 1.5rem;
-
-      &--dark {
-        //text-align: right;
-      }
     }
   }
 }
