@@ -95,7 +95,10 @@ body {
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 3; }
   .navigation__logo {
     height: 5rem;
     width: 5rem; }
