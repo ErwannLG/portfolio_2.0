@@ -45,6 +45,7 @@
   font-weight: 600;
   padding: .8rem 8rem;
   border-bottom: var(--line);
+  box-shadow: var(--shadow-small);
 
   display: flex;
   justify-content: space-between;
@@ -251,6 +252,24 @@
       font-size: 1.6rem;
       line-height: 2rem;
       margin-top: 1.5rem;
+    }
+  }
+
+  &__technologies {
+    margin-top: 3rem;
+    list-style: none;
+
+    display: flex;
+    justify-content: left;
+
+
+    &-item {
+      height: 2.8rem;
+      width: auto;
+      
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
     }
   }
 }
