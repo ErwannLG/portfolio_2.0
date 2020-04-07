@@ -5,7 +5,7 @@
   font-family: var(--font-primary);
   font-size: 1.8rem;
   font-weight: 600;
-  padding: .8rem 8rem;
+  //padding: .8rem 8rem;
   border-bottom: var(--line);
   box-shadow: var(--shadow-smaller);
 
@@ -18,27 +18,35 @@
   z-index: 3;
 
   &__logo {
-    height: 5rem;
-    width: 5rem;
+    height: 4.6rem;
+    width: auto;
+    margin: .8rem 0 .8rem 3rem;
+    align-self: center;
+
+    &:hover {
+      fill: var(--color-primary-grey);
+    }
   }
 
   &__menu {
     display: flex;
-
+    align-self: stretch;
     list-style: none;
     text-transform: uppercase;
-
+    
     &-item {
+      display: flex;
+      align-items: center;
       transition: all .2s;
+      padding: 0 2rem;
       height: 100%;
 
       &:hover {
-        background-color: var(--color-primary-light);
-      }
-    }
+        //background-color: var(--color-primary-light);
+        background-color: var(--color-grey-blue-2);
 
-    &-item:not(:last-child) {
-      margin-right: 5rem;
+        cursor: pointer;
+      }
     }
   }
 
@@ -47,6 +55,7 @@
     align-items: center;
 
     list-style: none;
+    margin-right: 3rem;
     
     &-icon {
       height: 2.6rem;
@@ -56,6 +65,7 @@
 
       &:hover {
         fill: var(--color-primary);
+        cursor: pointer;
       }
     }
     
@@ -170,7 +180,7 @@
     padding: 6rem 16rem;
     height: 60rem;
 
-    &:nth-child(even) {
+    &:nth-child(even) { // to alternate rows colors and have different shape
       background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
   
