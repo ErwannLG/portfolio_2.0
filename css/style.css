@@ -73,10 +73,7 @@ body {
   .navigation__logo {
     height: 4.6rem;
     width: auto;
-    margin: .8rem 0 .8rem 3rem;
-    align-self: center; }
-    .navigation__logo:hover {
-      fill: var(--color-primary-grey); }
+    margin: .8rem 0 .8rem 3rem; }
   .navigation__menu {
     display: flex;
     align-self: stretch;
