@@ -1,11 +1,12 @@
 .footer {
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  //clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   background-color: var(--color-grey-dark-1);
   color: var(--color-grey-light-1);
   height: 16rem;
   padding-top: 8rem;
   text-align: center;
   font-size: 1.4rem;
+  margin-top: -3.5rem;
 
   span {
     color: var(--color-grey-blue-1);
