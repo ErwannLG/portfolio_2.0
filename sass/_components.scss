@@ -193,12 +193,9 @@
     }
   }
 
-
   &__image-box {
     flex: 0 0 50%;
   }
-
-
 
   &__image {
     display: inline-block;
@@ -231,12 +228,37 @@
 
 
     &-item {
-      height: 2.8rem;
-      width: auto;
       
       &:not(:last-child) {
         margin-right: 1rem;
       }
     }
+
+    &-icon {
+      height: 2.8rem;
+      width: 2.8rem;
+      //fill: red;
+
+      &--npm {
+        fill: #d00b1f;
+      }
+    }
+  }
+}
+
+.btn-box {
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+
+  &__btn {
+    background-color: var(--color-grey-dark-1);
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: #fff;
   }
 }
