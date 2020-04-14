@@ -51,11 +51,14 @@ body {
 .footer {
   background-color: var(--color-grey-dark-1);
   color: var(--color-grey-light-1);
-  height: 16rem;
-  padding-top: 8rem;
+  height: 10rem;
+  padding-top: 4rem;
   text-align: center;
   font-size: 1.4rem;
-  margin-top: -3.5rem; }
+  margin-top: -3.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center; }
   .footer span {
     color: var(--color-grey-blue-1); }
 
@@ -232,6 +235,18 @@ body {
   padding-bottom: 12rem;
   display: flex;
   justify-content: center; }
+
+.to-top {
+  background-color: var(--color-primary);
+  border: none;
+  padding: .6rem;
+  cursor: pointer;
+  position: absolute;
+  top: -2.5rem; }
+  .to-top__btn {
+    height: 3rem;
+    width: 3rem;
+    fill: #fff; }
 
 .heading-1 {
   font-family: var(--font-display);

@@ -287,5 +287,21 @@
 
 
 
-////////////////////////
+//////////////////////////
 // SCROLL TO TOP BUTTON
+.to-top {
+  background-color: var(--color-primary);
+  border: none;
+  padding: .6rem;
+  cursor: pointer;
+  position: absolute;
+  top: -2.5rem;
+  
+  &__btn {
+    height: 3rem;
+    width: 3rem;
+    fill: #fff;
+  }
+}
+
+
