@@ -71,11 +71,18 @@
 }
 
 
+
 //////////////////////////
 // HEADER
 .header {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 12rem;
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
 
   &__dev {
     display: flex;

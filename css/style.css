@@ -1,3 +1,28 @@
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-delay: 3s; }
+
 :root {
   --color-primary: #2AA9E2;
   --color-primary-light: #56CCF2;
@@ -55,7 +80,7 @@ body {
   padding-top: 4rem;
   text-align: center;
   font-size: 1.4rem;
-  margin-top: -3.5rem;
+  margin-top: 2.5rem;
   position: relative;
   display: flex;
   justify-content: center; }
@@ -111,7 +136,11 @@ body {
 
 .header {
   text-align: center;
-  margin-top: 5rem; }
+  margin-top: 12rem;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .header__dev {
     display: flex;
     justify-content: center;
