@@ -40,7 +40,7 @@
   --color-grey-dark-2: #4F4F4F;
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
-  --shadow-drop: 7px 5px 16px rgb(201, 201, 201);
+  --shadow-drop: 7px 5px 16px rgba(201, 201, 201);
   --shadow-small: 0 2px 6px rgba(0, 0, 0, 0.16);
   --shadow-smaller: 0 2px 16px rgba(0, 0, 0, 0.05);
   --font-primary: 'Montserrat', sans-serif;
@@ -80,7 +80,6 @@ body {
   padding-top: 4rem;
   text-align: center;
   font-size: 1.4rem;
-  margin-top: 2.5rem;
   position: relative;
   display: flex;
   justify-content: center; }
@@ -137,7 +136,6 @@ body {
 .header {
   text-align: center;
   margin-top: 12rem;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -158,7 +156,7 @@ body {
 
 .skills {
   width: 80%;
-  margin: 9rem auto;
+  margin: 19rem auto;
   display: flex;
   justify-content: space-between; }
   .skills__box {
@@ -184,7 +182,8 @@ body {
 .portfolio {
   text-align: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .portfolio__title {
     margin-bottom: 5rem; }
     .portfolio__title-underline {
@@ -196,9 +195,9 @@ body {
       margin-right: auto; }
   .portfolio__row {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    padding: 6rem 16rem;
+    padding: 8rem 16rem;
     height: 60rem; }
     .portfolio__row:nth-child(even) {
       background-color: var(--color-grey-blue-2);
@@ -210,20 +209,22 @@ body {
       .portfolio__row:nth-child(even) > .portfolio__image-box {
         order: 2; }
   .portfolio__image-box {
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    justify-content: center; }
   .portfolio__image {
     display: inline-block;
     width: 100%;
     height: auto; }
   .portfolio__description {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
+    justify-content: center;
     text-align: left;
     padding: 5rem; }
     .portfolio__description .heading-5 {
       margin-top: -1rem; }
     .portfolio__description-text {
       font-size: 1.6rem;
-      line-height: 2rem;
+      line-height: 2.4rem;
       margin-top: 1.5rem; }
   .portfolio__technologies {
     margin-top: 3rem;
@@ -276,6 +277,8 @@ body {
     height: 3rem;
     width: 3rem;
     fill: #fff; }
+  .to-top:hover {
+    background-color: var(--color-primary-light); }
 
 .heading-1 {
   font-family: var(--font-display);
@@ -292,7 +295,7 @@ body {
 
 .heading-3 {
   text-transform: uppercase;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 600; }
 
 .heading-4 {
