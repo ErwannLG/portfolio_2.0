@@ -180,19 +180,19 @@
     justify-content: center;
     align-items: center;
 
-    padding: 8rem 16rem;
-    height: 60rem;
+    padding: 15rem 16rem;
+    //height: 60rem;
 
     &:nth-child(even) { // to alternate rows colors and have different shape
       background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
   
       &:not(:first-child) {
-        margin-top: -4rem;
+        margin-top: -3.8rem;
       }
   
       &:not(:last-child) {
-        margin-bottom: -4rem;
+        margin-bottom: -3.8rem;
       }
 
       & > .portfolio__image-box { // change flex order to have blue rows images on the right side
@@ -274,7 +274,7 @@
     cursor: pointer;
     transition: all .2s;
 
-    align-self: center;
+    //align-self: center;
   
     &:hover {
       background-color: var(--color-primary-grey-dark);
