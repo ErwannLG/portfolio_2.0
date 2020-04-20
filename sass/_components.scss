@@ -122,11 +122,12 @@
   justify-content: space-between;
 
   &__box {
-    padding: 3rem 3rem;
-
+    padding: 3rem 4rem;
+    width: 33%;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: var(--shadow-small);
+    overflow: hidden;
+    box-shadow: var(--shadow-drop);
 
     display: flex;
     flex-direction: column;
@@ -142,12 +143,31 @@
   }
 
   &__box:not(:last-child) {
-    margin-right: 4rem;
+    margin-right: 6rem;
   }
 
   &__image {
     height: 12rem;
     width: 12rem;
+  }
+
+  &__topcolor {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: green;
+
+    &-1 {
+      background-color: yellow;
+    }
+
+    &-2 {
+      background-color: red;
+    }
+
+    &-3 {
+      background-color: blue;
+    }
   }
 }
 
