@@ -103,6 +103,8 @@ body {
     height: 4.6rem;
     width: auto;
     margin: .8rem 0 .8rem 3rem; }
+    .navigation__logo:hover {
+      fill: #C6D8E9; }
   .navigation__menu {
     display: flex;
     align-self: stretch;
