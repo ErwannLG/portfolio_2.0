@@ -231,7 +231,7 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
-    overflow: hidden;
+    //overflow: hidden;
   }
 
   &__image {
@@ -241,7 +241,7 @@
     transition: all .2s;
 
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
   }
 

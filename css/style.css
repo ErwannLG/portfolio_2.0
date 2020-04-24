@@ -227,15 +227,14 @@ body {
     width: 100%;
     justify-content: center;
     position: relative;
-    cursor: pointer;
-    overflow: hidden; }
+    cursor: pointer; }
   .portfolio__image {
     display: inline-block;
     width: 100%;
     height: auto;
     transition: all .2s; }
     .portfolio__image:hover {
-      transform: scale(1.05); }
+      transform: scale(1.02); }
   .portfolio__description {
     flex: 0 0 40%;
     justify-content: center;
