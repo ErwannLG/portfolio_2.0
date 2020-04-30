@@ -162,26 +162,7 @@
     height: 13rem;
     width: auto;
   }
-
-  &__topcolor {
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: green;
-
-    &-1 {
-      background-color: yellow;
-    }
-
-    &-2 {
-      background-color: red;
-    }
-
-    &-3 {
-      background-color: blue;
-    }
-  }
-}*/
+}
 
 
 .skills {
@@ -195,7 +176,7 @@
 
   &__box {
     padding: 3rem 4rem;
-    width: 33%;
+    width: 30%;
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -204,13 +185,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    //justify-content: center;
+
+    &-image {
+      height: 12rem;
+      width: 12rem;
+      margin-bottom: 1rem;
+    }
 
     &-description {
       font-size: 1.6rem;
       margin-top: 1.6rem;
       text-align: center;
       line-height: 2.2rem;
+
+      align-self: flex-end;
     }
   }
 
@@ -218,10 +207,7 @@
     margin-right: 6rem;
   }
 
-  &__image {
-    height: 12rem;
-    width: 12rem;
-  }
+
 }
 
 
@@ -256,7 +242,7 @@
     //height: 60rem;
 
     &:nth-child(even) { // to alternate rows colors and have different shape
-      background-color: var(--color-grey-blue-2);
+      background-color: var(--color-grey-blue-3); //--color-grey-blue-2
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
   
       &:not(:first-child) {
