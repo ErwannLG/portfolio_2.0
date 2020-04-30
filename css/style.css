@@ -136,11 +136,15 @@ body {
       margin-right: 2rem; }
 
 .header {
-  text-align: center;
-  margin-top: 12rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 8rem; }
+  .header__heading {
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-shadow: 7px 5px 4px #a8a8a8;
+    font-size: 10rem; }
   .header__dev {
     display: flex;
     justify-content: center;
@@ -155,7 +159,66 @@ body {
       .header__dev-line--end {
         margin-left: 2rem;
         background-image: linear-gradient(to right, var(--color-grey-light-4), transparent); }
+  .header__whoami {
+    margin: 12rem 26rem;
+    font-size: 1.6rem; }
 
+/*
+.skills {
+  margin: 12rem 26rem;
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__box {
+    background-color: #fff;
+    padding: 3rem 4rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--shadow-drop);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-description {
+      font-size: 1.6rem;
+      margin-top: 1.6rem;
+      text-align: center;
+      line-height: 2.2rem;
+    }
+  }
+
+  &__box:not(:last-child) {
+    margin-right: 6rem;
+  }
+
+  &__image {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  &__topcolor {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: green;
+
+    &-1 {
+      background-color: yellow;
+    }
+
+    &-2 {
+      background-color: red;
+    }
+
+    &-3 {
+      background-color: blue;
+    }
+  }
+}*/
 .skills {
   width: 80%;
   margin: 19rem auto;
@@ -182,17 +245,6 @@ body {
   .skills__image {
     height: 12rem;
     width: 12rem; }
-  .skills__topcolor {
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: green; }
-    .skills__topcolor-1 {
-      background-color: yellow; }
-    .skills__topcolor-2 {
-      background-color: red; }
-    .skills__topcolor-3 {
-      background-color: blue; }
 
 .portfolio {
   text-align: center;
@@ -305,12 +357,6 @@ body {
     outline: none;
     transform: translateY(-1px);
     box-shadow: var(--shadow-smaller); }
-
-.heading-1 {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 9.6rem;
-  text-shadow: 7px 5px 4px #a8a8a8; }
 
 .heading-2 {
   text-transform: uppercase;

@@ -79,20 +79,26 @@
 //////////////////////////
 // HEADER
 .header {
-  text-align: center;
-  margin-top: 12rem;
-  //height: 60vh;
-
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
-
+  //justify-content: center;
+  margin-top: 8rem;
+  
+  &__heading {
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-shadow: 7px 5px 4px rgb(168, 168, 168);
+    font-size: 10rem;
+  }
+  
   &__dev {
     display: flex;
     justify-content: center;
     align-items: center;
 
+
+    
     &-line {
       //background-color: var(--color-grey-dark-3);
       height: 1px;
@@ -110,6 +116,11 @@
       }
     }
   }
+
+  &__whoami {
+    margin: 12rem 26rem;
+    font-size: 1.6rem;
+  }
 }
 
 
@@ -117,18 +128,15 @@
 //////////////////////////
 // SKILLS
 .skills {
-  width: 80%;
-  margin: 19rem auto;
-  //padding: 6rem 8rem;
+  margin: 12rem 26rem;
+  font-size: 1.6rem;
 
-  
   display: flex;
   justify-content: space-between;
 
   &__box {
-    padding: 3rem 4rem;
-    width: 33%;
     background-color: #fff;
+    padding: 3rem 4rem;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: var(--shadow-drop);
@@ -173,8 +181,48 @@
       background-color: blue;
     }
   }
-}
+}*/
 
+
+.skills {
+  width: 80%;
+  margin: 19rem auto;
+  //padding: 6rem 8rem;
+
+  
+  display: flex;
+  justify-content: space-between;
+
+  &__box {
+    padding: 3rem 4rem;
+    width: 33%;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--shadow-drop);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-description {
+      font-size: 1.6rem;
+      margin-top: 1.6rem;
+      text-align: center;
+      line-height: 2.2rem;
+    }
+  }
+
+  &__box:not(:last-child) {
+    margin-right: 6rem;
+  }
+
+  &__image {
+    height: 12rem;
+    width: 12rem;
+  }
+}
 
 
 //////////////////////////
