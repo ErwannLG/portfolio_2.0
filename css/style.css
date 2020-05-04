@@ -194,11 +194,10 @@ body {
   display: flex;
   justify-content: space-between; }
   .skills__box {
-    padding: 3rem 4rem;
+    padding: 2.6rem 4rem 3.5rem 4rem;
     width: 30%;
     background-color: #fff;
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: var(--shadow-drop);
     display: flex;
     flex-direction: column;
@@ -210,11 +209,7 @@ body {
     .skills__box-description {
       font-size: 1.6rem;
       margin-top: 1.6rem;
-      text-align: center;
-      line-height: 2.2rem;
-      align-self: flex-end; }
-  .skills__box:not(:last-child) {
-    margin-right: 6rem; }
+      line-height: 2.2rem; }
 
 .portfolio {
   text-align: center;

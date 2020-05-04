@@ -168,24 +168,20 @@
 .skills {
   width: 80%;
   margin: 19rem auto;
-  //padding: 6rem 8rem;
-
   
   display: flex;
   justify-content: space-between;
 
   &__box {
-    padding: 3rem 4rem;
+    padding: 2.6rem 4rem 3.5rem 4rem;
     width: 30%;
     background-color: #fff;
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: var(--shadow-drop);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    //justify-content: center;
 
     &-image {
       height: 12rem;
@@ -193,19 +189,18 @@
       margin-bottom: 1rem;
     }
 
+    
     &-description {
       font-size: 1.6rem;
       margin-top: 1.6rem;
-      text-align: center;
       line-height: 2.2rem;
 
-      align-self: flex-end;
     }
   }
 
-  &__box:not(:last-child) {
-    margin-right: 6rem;
-  }
+  //&__box:not(:last-child) {
+    //margin-right: 6rem;
+  //}
 
 
 }
