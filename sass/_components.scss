@@ -196,7 +196,7 @@
     //height: 60rem;
 
     &:nth-child(even) { // to alternate rows colors and have different shape
-      background-color: var(--color-grey-blue-3); //--color-grey-blue-2
+      background-color: var(--color-grey-blue-2); //--color-grey-blue-2
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
   
       &:not(:first-child) {

@@ -211,7 +211,7 @@ body {
     align-items: center;
     padding: 15rem 16rem; }
     .portfolio__row:nth-child(even) {
-      background-color: var(--color-grey-blue-3);
+      background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%); }
       .portfolio__row:nth-child(even):not(:first-child) {
         margin-top: -3.8rem; }
