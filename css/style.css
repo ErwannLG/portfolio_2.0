@@ -126,6 +126,8 @@ body {
     align-items: center;
     list-style: none;
     margin-right: 3rem; }
+    .navigation__social-link:not(:last-child) {
+      margin-right: 2rem; }
     .navigation__social-icon {
       height: 2.6rem;
       width: 2.6rem;
@@ -134,8 +136,6 @@ body {
       .navigation__social-icon:hover {
         fill: var(--color-primary);
         cursor: pointer; }
-    .navigation__social-icon:not(:last-child) {
-      margin-right: 2rem; }
 
 .header {
   display: flex;
@@ -229,7 +229,7 @@ body {
     cursor: pointer; }
   .portfolio__image {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     height: auto;
     transition: all .2s; }
     .portfolio__image:hover {
@@ -328,5 +328,5 @@ body {
   font-weight: 600;
   color: var(--color-grey-dark-3); }
   .heading-5 span {
-    color: var(--color-primary-grey);
+    color: var(--color-primary);
     font-size: 2rem; }

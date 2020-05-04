@@ -55,12 +55,17 @@
 
     list-style: none;
     margin-right: 3rem;
-    
+
+    &-link:not(:last-child) {
+      margin-right: 2rem;
+    }
+
     &-icon {
       height: 2.6rem;
       width: 2.6rem;
       fill: var(--color-grey-dark-2);
       transition: all .2s;
+
 
       &:hover {
         fill: var(--color-primary);
@@ -68,9 +73,7 @@
       }
     }
     
-    &-icon:not(:last-child) {
-      margin-right: 2rem;
-    }
+
   }
 }
 
@@ -225,7 +228,7 @@
 
   &__image {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     height: auto;
     transition: all .2s;
 
