@@ -81,6 +81,7 @@ body {
   padding-top: 4rem;
   text-align: center;
   font-size: 1.4rem;
+  margin-top: -3rem;
   position: relative;
   display: flex;
   justify-content: center; }
@@ -140,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem; }
+  margin-top: 22rem; }
   .header__heading {
     font-family: var(--font-display);
     font-weight: 400;
@@ -149,7 +150,8 @@ body {
   .header__dev {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 2.5rem; }
     .header__dev-line {
       height: 1px;
       width: 26rem;
@@ -160,37 +162,12 @@ body {
       .header__dev-line--end {
         margin-left: 2rem;
         background-image: linear-gradient(to right, var(--color-grey-light-4), transparent); }
-  .header__whoami {
-    margin: 12rem 26rem;
-    font-size: 1.6rem; }
-
-.skills {
-  margin: 12rem 26rem;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: space-between; }
-  .skills__box {
-    background-color: #fff;
-    padding: 3rem 4rem;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: var(--shadow-drop);
-    display: flex;
-    flex-direction: column; }
-    .skills__box-description {
-      font-size: 1.6rem;
-      margin-top: 1.6rem;
-      text-align: center;
-      line-height: 2.2rem; }
-  .skills__box:not(:last-child) {
-    margin-right: 6rem; }
-  .skills__image {
-    height: 13rem;
-    width: auto; }
 
 .skills {
   width: 80%;
   margin: 19rem auto;
+  margin-top: 22rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between; }
   .skills__box {
@@ -209,7 +186,10 @@ body {
     .skills__box-description {
       font-size: 1.6rem;
       margin-top: 1.6rem;
+      text-align: center;
       line-height: 2.2rem; }
+  .skills__box:not(:last-child) {
+    margin-right: 6rem; }
 
 .portfolio {
   text-align: center;
@@ -239,6 +219,8 @@ body {
         margin-bottom: -3.8rem; }
       .portfolio__row:nth-child(even) > .portfolio__image-box {
         order: 2; }
+    .portfolio__row:nth-child(odd) {
+      background-color: #fff; }
   .portfolio__image-box {
     flex: 0 0 60%;
     width: 100%;
