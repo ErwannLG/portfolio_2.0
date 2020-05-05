@@ -291,6 +291,11 @@
   display: flex;
   justify-content: left;
 
+  &__link {
+    &:not(:last-child) {
+      margin-right: .8rem;
+    }
+  }
 
   &__btn {
     background-color: var(--color-primary-grey-dark); // var(--color-grey-blue-5)
@@ -310,7 +315,7 @@
     }
 
     &:not(:last-child) {
-      margin-right: .8rem;
+      //margin-right: .8rem;
     }
   }
 }
