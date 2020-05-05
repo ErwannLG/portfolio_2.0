@@ -186,12 +186,18 @@ body {
     align-items: center; }
     @media only screen and (max-width: 75em) {
       .skills__box {
+        flex-direction: row;
         margin-bottom: 6rem;
         padding-bottom: 4rem; } }
     .skills__box-image {
       height: 12rem;
       width: 12rem;
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 75em) {
+        .skills__box-image {
+          margin-bottom: auto;
+          margin-top: auto;
+          margin-right: 2rem; } }
     .skills__box-heading {
       text-align: center; }
     .skills__box-description {
