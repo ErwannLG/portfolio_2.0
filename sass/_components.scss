@@ -150,6 +150,10 @@
       margin-bottom: 1rem;
     }
 
+    &-heading {
+      text-align: center;
+    }
+
     &-description {
       font-size: 1.6rem;
       margin-top: 1.6rem;
@@ -289,7 +293,7 @@
 
 
   &__btn {
-    background-color: var(--color-grey-dark-2);
+    background-color: var(--color-primary-grey-dark); // var(--color-grey-blue-5)
     color: #fff;
     border: none;
     border-radius: 2px;
@@ -302,7 +306,7 @@
     //align-self: center;
   
     &:hover {
-      background-color: var(--color-primary-grey-dark);
+      background-color: var(--color-grey-blue-5);
     }
 
     &:not(:last-child) {
