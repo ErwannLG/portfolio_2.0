@@ -1,3 +1,10 @@
+  // RESPONSIVE BREAKPOINTS
+  $bp-largest: 75em;      // 1200px
+  $bp-large: 68.75em;     // 1100px
+  $bp-medium: 56.25em;    // 900px
+  $bp-small: 37.5em;      // 600px
+  $bp-smallest: 31.25em;      // 500px
+
 :root {
   //--color-primary: #1a9bd6;
   --color-primary: #2AA9E2;
@@ -26,12 +33,12 @@
   --shadow-drop: 10px 15px 16px rgba(201, 201, 201);
   --shadow-small: 0 2px 6px rgba(0, 0, 0, 0.16);
   --shadow-smaller: 0 2px 16px rgba(0, 0, 0, 0.05);
+  
+  --line: 1px solid var(--color-grey-light-2);
 
-
+  // FONT VARIABLES
   --font-primary: 'Montserrat', sans-serif;
   --font-display: 'Lobster', cursive;
-
-  --line: 1px solid var(--color-grey-light-2);
 }
 
 * {
