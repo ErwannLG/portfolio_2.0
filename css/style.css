@@ -155,7 +155,7 @@ body {
     margin-bottom: 2.5rem; }
     .header__dev-line {
       height: 1px;
-      width: 26rem;
+      width: 16vw;
       margin-top: 1rem; }
       .header__dev-line--start {
         background-image: linear-gradient(to left, var(--color-grey-light-4), transparent);
@@ -174,7 +174,8 @@ body {
   flex-wrap: nowrap; }
   @media only screen and (max-width: 75em) {
     .skills {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      margin-bottom: 8rem; } }
   .skills__box {
     padding: 2.6rem 4rem 3.5rem 4rem;
     width: 100%;
@@ -230,6 +231,19 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15rem 16rem; }
+    @media only screen and (max-width: 75em) {
+      .portfolio__row {
+        padding: 8rem 16rem;
+        flex-direction: column; } }
+    @media only screen and (max-width: 68.75em) {
+      .portfolio__row {
+        padding: 8rem 12rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__row {
+        padding: 8rem 8rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .portfolio__row {
+        padding: 8rem 5rem; } }
     .portfolio__row:nth-child(even) {
       background-color: var(--color-grey-blue-2);
       clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%); }
@@ -239,19 +253,27 @@ body {
         margin-bottom: -3.8rem; }
       .portfolio__row:nth-child(even) > .portfolio__image-box {
         order: 2; }
+        @media only screen and (max-width: 75em) {
+          .portfolio__row:nth-child(even) > .portfolio__image-box {
+            order: 0; } }
     .portfolio__row:nth-child(odd) {
       background-color: #fff; }
   .portfolio__image-box {
     flex: 0 0 60%;
     width: 100%;
     justify-content: center;
-    position: relative;
     cursor: pointer; }
+    @media only screen and (max-width: 75em) {
+      .portfolio__image-box {
+        margin-top: 4rem; } }
   .portfolio__image {
     display: inline-block;
     width: 80%;
     height: auto;
     transition: all .2s; }
+    @media only screen and (max-width: 75em) {
+      .portfolio__image {
+        width: 80%; } }
     .portfolio__image:hover {
       transform: scale(1.02); }
   .portfolio__description {
@@ -259,6 +281,10 @@ body {
     justify-content: center;
     text-align: left;
     padding: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .portfolio__description {
+        padding-left: 5rem;
+        width: 100%; } }
     .portfolio__description .heading-5 {
       margin-top: -1rem; }
     .portfolio__description-text {

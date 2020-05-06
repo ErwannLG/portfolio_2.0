@@ -92,6 +92,7 @@
     font-weight: 400;
     text-shadow: 7px 5px 4px rgb(168, 168, 168);
     font-size: 10rem;
+    //min-width: 70rem;
   }
   
   &__dev {
@@ -102,9 +103,9 @@
 
     
     &-line {
-      //background-color: var(--color-grey-dark-3);
       height: 1px;
-      width: 26rem;
+      //width: 26rem;
+      width: 16vw;
       margin-top: 1rem;
       
       &--start {
@@ -136,7 +137,7 @@
 
   @media only screen and (max-width: $bp-largest) {
     flex-wrap: wrap;
-    //justify-content: center;
+    margin-bottom: 8rem;
   }
 
   &__box {
@@ -223,7 +224,23 @@
     align-items: center;
 
     padding: 15rem 16rem;
-    //height: 60rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding: 8rem 16rem;
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 8rem 12rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 8rem 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 8rem 5rem;
+    }
 
     &:nth-child(even) { // to alternate rows colors and have different shape
       background-color: var(--color-grey-blue-2); //--color-grey-blue-2
@@ -239,6 +256,10 @@
 
       & > .portfolio__image-box { // change flex order to have blue rows images on the right side
         order: 2;
+
+        @media only screen and (max-width: $bp-largest) {
+          order: 0;
+        }
       }
     }
 
@@ -251,9 +272,11 @@
     flex: 0 0 60%;
     width: 100%;
     justify-content: center;
-    position: relative;
     cursor: pointer;
-    //overflow: hidden;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-top: 4rem;
+    }
   }
 
   &__image {
@@ -261,6 +284,10 @@
     width: 80%;
     height: auto;
     transition: all .2s;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 80%;
+    }
 
     &:hover {
       transform: scale(1.02);
@@ -272,6 +299,11 @@
     justify-content: center;
     text-align: left;
     padding: 5rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding-left: 5rem;
+      width: 100%;
+    }
 
     .heading-5 {
       margin-top: -1rem;
