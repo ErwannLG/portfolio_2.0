@@ -183,7 +183,7 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    flex-wrap: nowrap;
+    //flex-wrap: nowrap;
   }
 
   &__box {
@@ -218,6 +218,12 @@
         margin-bottom: auto;
         margin-top: auto;
         margin-right: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        margin-right: 0;
       }
     }
 
