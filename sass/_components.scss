@@ -72,8 +72,6 @@
         cursor: pointer;
       }
     }
-    
-
   }
 }
 
@@ -85,14 +83,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 22rem;
+  //margin-top: 22rem;
+  margin-top: 22vh;
+
   
   &__heading {
     font-family: var(--font-display);
     font-weight: 400;
     text-shadow: 7px 5px 4px rgb(168, 168, 168);
     font-size: 10rem;
-    //min-width: 70rem;
+    
+    @media only screen and (max-width: $bp-small) {
+      font-size: 7.4rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 5rem;
+    }
   }
   
   &__dev {
@@ -100,13 +107,24 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2.5rem;
-
     
     &-line {
       height: 1px;
       //width: 26rem;
       width: 16vw;
       margin-top: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 12vw;
+      }
+  
+      @media only screen and (max-width: $bp-smaller) {
+        width: 8vw;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
+      }
       
       &--start {
         background-image: linear-gradient(to left, var(--color-grey-light-4), transparent);
@@ -116,6 +134,30 @@
       &--end {
         margin-left: 2rem;
         background-image: linear-gradient(to right, var(--color-grey-light-4), transparent);
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    &-link:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &-icon {
+      height: 2.6rem;
+      width: 2.6rem;
+      fill: var(--color-grey-dark-2);
+      transition: all .2s;
+
+
+      &:hover {
+        fill: var(--color-primary);
+        cursor: pointer;
       }
     }
   }
@@ -140,6 +182,10 @@
     margin-bottom: 8rem;
   }
 
+  @media only screen and (max-width: $bp-small) {
+    flex-wrap: nowrap;
+  }
+
   &__box {
     padding: 2.6rem 4rem 3.5rem 4rem;
     width: 100%;
@@ -157,6 +203,12 @@
       padding-bottom: 4rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      margin-bottom: 6rem;
+      padding-bottom: 4rem;
+    }
+
     &-image {
       height: 12rem;
       width: 12rem;
@@ -167,10 +219,6 @@
         margin-top: auto;
         margin-right: 2rem;
       }
-    }
-
-    &-content {
-      
     }
 
     &-heading {

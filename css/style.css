@@ -142,12 +142,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 22rem; }
+  margin-top: 22vh; }
   .header__heading {
     font-family: var(--font-display);
     font-weight: 400;
     text-shadow: 7px 5px 4px #a8a8a8;
     font-size: 10rem; }
+    @media only screen and (max-width: 41.25em) {
+      .header__heading {
+        font-size: 7.4rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .header__heading {
+        font-size: 5rem; } }
   .header__dev {
     display: flex;
     justify-content: center;
@@ -157,12 +163,35 @@ body {
       height: 1px;
       width: 16vw;
       margin-top: 1rem; }
+      @media only screen and (max-width: 41.25em) {
+        .header__dev-line {
+          width: 12vw; } }
+      @media only screen and (max-width: 31.25em) {
+        .header__dev-line {
+          width: 8vw; } }
+      @media only screen and (max-width: 25em) {
+        .header__dev-line {
+          display: none; } }
       .header__dev-line--start {
         background-image: linear-gradient(to left, var(--color-grey-light-4), transparent);
         margin-right: 2rem; }
       .header__dev-line--end {
         margin-left: 2rem;
         background-image: linear-gradient(to right, var(--color-grey-light-4), transparent); }
+  .header__social {
+    display: flex;
+    align-items: center;
+    list-style: none; }
+    .header__social-link:not(:last-child) {
+      margin-right: 2rem; }
+    .header__social-icon {
+      height: 2.6rem;
+      width: 2.6rem;
+      fill: var(--color-grey-dark-2);
+      transition: all .2s; }
+      .header__social-icon:hover {
+        fill: var(--color-primary);
+        cursor: pointer; }
 
 .skills {
   width: 80%;
@@ -176,6 +205,9 @@ body {
     .skills {
       flex-wrap: wrap;
       margin-bottom: 8rem; } }
+  @media only screen and (max-width: 41.25em) {
+    .skills {
+      flex-wrap: nowrap; } }
   .skills__box {
     padding: 2.6rem 4rem 3.5rem 4rem;
     width: 100%;
@@ -188,6 +220,11 @@ body {
     @media only screen and (max-width: 75em) {
       .skills__box {
         flex-direction: row;
+        margin-bottom: 6rem;
+        padding-bottom: 4rem; } }
+    @media only screen and (max-width: 41.25em) {
+      .skills__box {
+        flex-direction: column;
         margin-bottom: 6rem;
         padding-bottom: 4rem; } }
     .skills__box-image {
@@ -241,7 +278,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .portfolio__row {
         padding: 8rem 8rem; } }
-    @media only screen and (max-width: 43.75em) {
+    @media only screen and (max-width: 41.25em) {
       .portfolio__row {
         padding: 8rem 5rem; } }
     .portfolio__row:nth-child(even) {
@@ -357,6 +394,12 @@ body {
   font-weight: 400;
   column-gap: 1.5rem;
   margin-top: 1rem; }
+  @media only screen and (max-width: 41.25em) {
+    .heading-2 {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .heading-2 {
+      font-size: 1.6rem; } }
 
 .heading-3 {
   text-transform: uppercase;
